@@ -13,10 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: update
-      run: apt-get update && apt-get upgrade
-    - name: dependencies
-      run: apt install build-essentials nasm libguestfs-tools
     - name: nasm
       run: cd bootloader && nasm -f bin bootloader.asm -o bootloader.bin
     - name: image
