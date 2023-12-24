@@ -13,7 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: dependencies
+      run: apt-get install nasm
     - name: nasm
       run: cd bootloader && nasm -f bin bootloader.asm -o bootloader.bin
     - name: image
-      run: sudo dd if=bootloader.bin of=bootable.img bs=512 count=1
+      run: dd if=bootloader.bin of=bootable.img bs=512 count=1
