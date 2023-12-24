@@ -16,10 +16,25 @@ section .text
         mov al, 'e'
         int 0x10
         mov al, 'l'
+        int 0x10 
+        int 0x10 ; 'l' is already in the register from the last instruction
+        mov al, 'o'
+        int 0x10
+        mov al, ','
+        int 0x10
+        mov al, ' '
+        int 0x10
+        mov al, 'W'
+        int 0x10
+        mov al, 'o'
+        int 0x10
+        mov al, 'r'
         int 0x10
         mov al, 'l'
         int 0x10
-        mov al, 'o'
+        mov al, 'd'
+        int 0x10
+        mov al, '!'
         int 0x10
 
     ; Infinite loop to keep the bootloader running
