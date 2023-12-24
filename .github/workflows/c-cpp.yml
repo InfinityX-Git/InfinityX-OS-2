@@ -1,0 +1,23 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: update
+      run: apt-get update && apt-get upgrade
+    - name: dependencies
+      run: apt install build-essentials nasm libguestfs-tools
+    - name: nasm
+      run: cd bootloader && nasm -f bin bootloader.asm -o bootloader.bin
+    - name: image
+      run: sudo dd if=bootloader.bin of=bootable.img bs=512 count=1
