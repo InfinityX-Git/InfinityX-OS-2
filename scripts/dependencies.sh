@@ -1,4 +1,3 @@
 #!/usr/bin/bash
 
-sudo apt-get install build-essential bison flex libgmp3-dev libmpc-dev libmpfr-dev texinfo wget \
-                   nasm mtools python3 python3-pip python3-parted scons dosfstools libguestfs-tools qemu-system-x86
+sudo apt-get install build-essential nasm qemu-system-x86 

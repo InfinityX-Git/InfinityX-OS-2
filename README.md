@@ -19,3 +19,9 @@
 
 Original OS: [InfinityX-OS](https://github.com/PranavVerma-droid/InfinityX-OS)
 
+## Scripts
+All Scripts can be found in the [scripts](scripts) folder. (Only for Bash)
+
+## Releases
+Check [Releases](https://github.com/PranavVerma-droid/InfinityX-OS-2) for the latest compiled OS.
+

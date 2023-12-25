@@ -13,5 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: empty
-      run: echo "Empty Action! Will start Dev Soon!"
+    - name: Dependencies
+      run: cd scripts && ./dependencies.sh
+    - name: Compile && Cleanup
+      run: cd scripts && ./compile.sh $$ ./cleanup.sh
