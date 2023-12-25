@@ -19,9 +19,6 @@
 
 Original OS: [InfinityX-OS](https://github.com/PranavVerma-droid/InfinityX-OS)
 
-Bootloader Files in [bootloader](bootloader). <br>
-All Scripts in [scripts](scripts).
-
 Everything Inside [scripts](scripts) should help you build the OS. <br>
 Everything Inside [bootloader](bootloader) is the Bootloader. <br>
 Everything Inside [docs](docs) is the Documentation.
