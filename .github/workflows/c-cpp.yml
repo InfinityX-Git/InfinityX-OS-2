@@ -14,6 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Dependencies
-      run: cd scripts && ./dependencies.sh
+      run: sudo apt-get install build-essential nasm qemu-system-x86 
     - name: Compile && Cleanup
       run: cd scripts && ./compile.sh $$ ./cleanup.sh
